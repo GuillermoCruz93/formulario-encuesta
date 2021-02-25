@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+#img-fondo{
+    position: fixed;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/05/Oficina_archdifusion.jpg);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+#description{
+    font-style: italic;
+    font-weight: 20px;
+}
