@@ -14,18 +14,70 @@
 
 <body>
     <div id='img-fondo'>
-        <div>
-            <header class="header">
-                <h1 id="title" class="text-center">Formulario para freeCodeCamp</h1>
 
-                <p id="description" class="text-center">Este es un proyecto de aprendizaje para saber hacer
-                    Webs Responsivas</p>
-            </header>
-            <form action="" id="survey-form">
+        <header class="header">
+            <h1 id="title">Formulario para freeCodeCamp</h1>
 
+            <p id="description">Este es un proyecto de aprendizaje para saber hacer
+                Webs Responsivas</p>
+        </header>
+        <form action="/signup" method="post" id="survey-form">
 
-            </form>
-        </div>
+            <label>Title</label>
+            <div>
+                <label class="mr">
+                    <input type="radio" name="title" value="mr">
+                    Mr
+                </label>
+                <label class="mrs">
+                    <input type="radio" name="title" value="mrs">
+                    Mrs
+                </label>
+                <label class="miss">
+                    <input type="radio" name="title" value="miss">
+                    Miss
+                </label>
+            </div>
+            <label id="name-label" for="name">First name</label>
+            <input type="text" name="first_name" id="name" placeholder="Pablito X" required>
+
+            <label>Last name</label>
+            <input type="text" name="last_name">
+
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="tu@email.com" required>
+
+            <label id="number-label" for="number">Phone number</label>
+            <input type="number" name="phone" id="number" placeholder="1234567890" min="1" max="10" required>
+
+            <label>Password</label>
+            <input type="password" name="password">
+
+            <label for="pais" >Country</label>
+            <select name="pais" id="dropdown">
+                <option>China</option>
+                <option>India</option>
+                <option>United States</option>
+                <option>Indonesia</option>
+                <option>Brazil</option>
+            </select>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10"> Escribe lo que quieras</textarea>
+            <div id="tyc">
+            <label>
+                <input type="checkbox" value="terms">
+                I agree to the <a href="/terms"> terms and conditions</a>
+            </label>
+            <label for="no-acept">
+                <input type="checkbox" value="terms">
+                Don't agree
+            </label>
+            </div>
+            <div id="botones">
+                <button id="submit">Sign up</button>
+                <button id="reset" type="reset">Reset form</button>
+            </div>
+        </form>
+
     </div>
     <!--Script FreeCodeCamp-->
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
